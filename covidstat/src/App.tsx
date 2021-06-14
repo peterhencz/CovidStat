@@ -1,12 +1,18 @@
 import React from "react";
-import "./App.css";
+
+import { Navbar, Button } from "./components";
+import "./App.scss";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Covid Stat Kiscica</h1>
-      </header>
+      <Navbar>
+        <div>
+          <Button>cica1</Button>
+          <Button>cica2</Button>
+          <Button>cica3</Button>
+        </div>
+      </Navbar>
     </div>
   );
 }
