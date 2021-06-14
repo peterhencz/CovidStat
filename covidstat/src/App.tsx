@@ -10,24 +10,29 @@ function App() {
     <div className="App">
       <Navbar>
         <div>
-          <Button
-            type="button"
-            additionalStyles="btn-primary"
-            onClick={() => setChartType("pie")}>
-            chart 1
-          </Button>   
-          <Button
-            type="button"
-            additionalStyles="btn-primary"
-            onClick={() => setChartType("bar")}>
-            chart 2
-          </Button>
-          <Button
-            type="button"
-            additionalStyles="btn-primary"
-            onClick={() => setChartType("radial")}>
-            chart 3
-          </Button>
+          <a className="navbar-brand" href="#">
+            <h3>Covid Hungary Statistics. Please select a chart type: </h3>
+          </a>
+          <div className="collapse navbar-collapse">
+            <Button
+              type="button"
+              additionalStyles="btn-primary"
+              onClick={() => setChartType("pie")}>
+              <p>PIE</p>
+            </Button>
+            <Button
+              type="button"
+              additionalStyles="btn-primary"
+              onClick={() => setChartType("bar")}>
+              <p>BAR</p>
+            </Button>
+            <Button
+              type="button"
+              additionalStyles="btn-primary"
+              onClick={() => setChartType("radial")}>
+              <p>FUNNEL</p>
+            </Button>
+          </div>
         </div>
       </Navbar>
 
