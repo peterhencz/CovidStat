@@ -9,10 +9,7 @@ const Button: React.FC<ButtonProps> = ({
   ...rest
 }) => {
   return (
-    <button
-      {...rest}
-      type={type}
-      className={`btn ${additionalStyles}`}>
+    <button {...rest} type={type} className={`btn m-2 ${additionalStyles}`}>
       {children}
     </button>
   );

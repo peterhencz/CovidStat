@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Navbar, Button } from "./components";
+import { Navbar, Button, Chart } from "./components";
 import "./App.scss";
 
 function App() {
@@ -9,16 +9,17 @@ function App() {
       <Navbar>
         <div>
           <Button type="button" additionalStyles="btn-primary">
-            cica1
+            chart 1
           </Button>
           <Button type="button" additionalStyles="btn-primary">
-            cica2
+            chart 2
           </Button>
           <Button type="button" additionalStyles="btn-primary">
-            cica3
+            chart 3
           </Button>
         </div>
       </Navbar>
+      <Chart name="cica" />
     </div>
   );
 }
