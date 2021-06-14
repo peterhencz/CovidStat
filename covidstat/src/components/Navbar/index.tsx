@@ -4,12 +4,8 @@ import { NavbarProps } from "./types";
 
 const Navbar: React.FC<NavbarProps> = ({ children, ...rest }) => {
   return (
-    <nav className="navbar navbar-expand-lg ">
-      <div className="container-fluid justify-content-center">
-        <a className="navbar-brand" href="#">
-          {children}
-        </a>
-      </div>
+    <nav className="navbar navbar-expand-lg bg-info">
+      <div className="container-fluid justify-content-center">{children}</div>
     </nav>
   );
 };

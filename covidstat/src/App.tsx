@@ -19,7 +19,10 @@ function App() {
           </Button>
         </div>
       </Navbar>
-      <Chart name="cica" />
+
+      <div className="container-fluid d-flex vh-100 w-100 justify-content-center align-items-center">
+        <Chart type="radial" />
+      </div>
     </div>
   );
 }

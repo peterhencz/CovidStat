@@ -1,5 +1,5 @@
 import React from "react";
 
 export interface ChartProps {
-  name?: string;
+  type: "bar" | "pie" | "radial";
 }
