@@ -8,9 +8,15 @@ function App() {
     <div className="App">
       <Navbar>
         <div>
-          <Button>cica1</Button>
-          <Button>cica2</Button>
-          <Button>cica3</Button>
+          <Button type="button" additionalStyles="btn-primary">
+            cica1
+          </Button>
+          <Button type="button" additionalStyles="btn-primary">
+            cica2
+          </Button>
+          <Button type="button" additionalStyles="btn-primary">
+            cica3
+          </Button>
         </div>
       </Navbar>
     </div>

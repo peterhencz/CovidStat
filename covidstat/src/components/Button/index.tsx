@@ -2,9 +2,17 @@ import React from "react";
 
 import { ButtonProps } from "./types";
 
-const Button: React.FC<ButtonProps> = ({ children, styles, ...rest }) => {
+const Button: React.FC<ButtonProps> = ({
+  children,
+  type = "button",
+  additionalStyles,
+  ...rest
+}) => {
   return (
-    <button {...rest} className={`btn rounded-3 text-uppercase ${styles}`}>
+    <button
+      {...rest}
+      type={type}
+      className={`btn ${additionalStyles}`}>
       {children}
     </button>
   );
